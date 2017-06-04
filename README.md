@@ -1,8 +1,8 @@
 # Project Kanban
 
-**Project Kanban (enca-kanban)** (project name WIP) is an online kanban board manager designed for students and educational institutions in mind. Whether it's organizing your daily schedules to setting up a group project, Kanban will do most of the heavy lifting for you with smarter templates, better automation, and deeper services integration.
+**Project Kanban (enca-kanban)** (project name WIP) is an online kanban board manager designed for students and educational institutions in mind. Whether it's organizing your schedules to setting up a group project, Kanban will do most of the heavy lifting for you with smarter templates, better automation, and deeper services integration.
 
-This project is currently a work in progress.
+This project is a work in progress.
 
 ---
 
