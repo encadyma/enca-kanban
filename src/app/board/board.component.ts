@@ -13,12 +13,21 @@ export class BoardComponent {
     workspace: "Project Revive",
     decks: [
       {
-        title: "Deck #1 (Rules)",
+        title: "Welcome to Project Kanban!",
         cards: [
           { title: "Project Kanban Rules and Announcements" },
           { title: "Did you know?" },
           { title: "Something colorful to spice up things!" },
           { title: "Not a very good example of a one-liner card, huh?" }
+        ]
+      },
+      {
+        title: "Board Rules",
+        cards: [
+          { title: "Rule #1: Never talk about the board club!" },
+          { title: "Rule #2: Keep your hands clean at all times." },
+          { title: "Rule #3: Make sure you're always living it up." },
+          { title: "Rule #4: There are no more rules!" },
         ]
       },
       {
@@ -35,7 +44,7 @@ export class BoardComponent {
           { title: "1-hour dubstep mix for College Festa" },
           { title: "50 page paper on AI (due by finals)" }
         ]
-      }
+      },
     ]
   };
 }

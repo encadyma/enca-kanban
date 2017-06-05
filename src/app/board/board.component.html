@@ -8,22 +8,23 @@
   <input class="board-search" type="text" placeholder="Search this board..."/>
 </div>
 <div class="board-decks-container">
-  <div class="deck">
+  <div class="deck" *ngFor="let deck of test_board.decks">
     <div class="deck-header">
-      <span class="deck-title">Deck #1 (Rules)</span>
-      <span class="deck-subtitle">Deck #1 (Rules) Subtitle here</span>
+      <span class="deck-title">{{deck.title}}</span>
+      <span class="deck-subtitle" *ngIf="deck.subtitle">{{deck.subtitle}}</span>
     </div>
     <div class="deck-cards">
-      <div class="deck-card">
+      <div class="deck-card" *ngFor="let card of deck.cards">
         <ul class="deck-card-labels">
           <li class="deck-card-label red"></li>
           <li class="deck-card-label orange"></li>
           <li class="deck-card-label yellow"></li>
           <li class="deck-card-label turq"></li>
         </ul>
-        <span class="deck-card-title">Project Kanban Rules and Announcements</span>
+        <span class="deck-card-title">{{card.title}}</span>
       </div>
     </div>
+    <div class="deck-action-add-card">+ ADD CARD</div>
   </div>
 
   <!-- sample deck -->
@@ -57,5 +58,6 @@
         <span class="deck-card-title">Now a card with all default labels! (special, isn't it?)</span>
       </div>
     </div>
+    <div class="deck-action-add-card">+ ADD CARD</div>
   </div>
 </div>
