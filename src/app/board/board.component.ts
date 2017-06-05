@@ -44,7 +44,7 @@ export class BoardComponent {
           { title: "1-hour dubstep mix for College Festa" },
           { title: "50 page paper on AI (due by finals)" }
         ]
-      },
+      }
     ]
   };
 }
