@@ -7,10 +7,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LaunchComponent } from './launch.component';
 import { AuthComponent } from './auth.component';
+import { BoardComponent } from './board/board.component';
 
 const appRoutes: Routes = [
   { path: 'auth', component: AuthComponent },
   { path: 'launch', component: LaunchComponent },
+  { path: 'board', component: BoardComponent },
   { path: '', redirectTo: '/launch', pathMatch: 'full' },
   { path: '**', component: LaunchComponent }  // TODO: need to change to 404
 ];
@@ -19,7 +21,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LaunchComponent,
-    AuthComponent
+    AuthComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,
