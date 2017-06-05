@@ -45,3 +45,10 @@ button.turq {
   background-color: #FFFFFF;
   color: #15AB89;
 }
+
+/* Angular Component Styling */
+#app-loading {
+  color: #A0A0A0;
+  text-align: center;
+  padding: 40vh 10vw;
+}
