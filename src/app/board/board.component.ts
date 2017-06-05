@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-
+  selector: 'app-board',
+  templateUrl: './board.component.html',
+  styleUrls: ['./board.component.css']
 })
 export class BoardComponent {
   // Sample board, based on early mockups.
@@ -35,5 +37,5 @@ export class BoardComponent {
         ]
       }
     ]
-  }
+  };
 }
