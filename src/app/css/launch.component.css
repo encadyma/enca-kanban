@@ -1,0 +1,23 @@
+.app-launch {
+  width: 100%;
+  height: 100%;
+  background-color: #A919C7;
+  color: #FAFAFA;
+  text-align: center;
+}
+img {
+  margin-top: 8vh;
+}
+p {
+  display: block;
+  margin: 0 auto;
+  font-size: 1em;
+  padding: 40px;
+}
+p.description {
+  font-size: 1.2em;
+  max-width: 600px;
+}
+button {
+  margin: 0 15px;
+}
