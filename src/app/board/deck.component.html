@@ -1,0 +1,7 @@
+<div class="deck">
+  <deck-header [deck]="deck"></deck-header>
+  <div class="deck-cards">
+    <deck-card [card]="card" *ngFor="let card of deck.cards"></deck-card>
+  </div>
+  <div class="deck-action-add-card">+ ADD CARD</div>
+</div>

@@ -127,6 +127,13 @@
   -webkit-transition: box-shadow 150ms ease;
 }
 
+.deck-card.active {
+  border-color: #15AB89;
+  box-shadow: 0px 2px 12px #15AB89;
+  transition: box-shadow 150ms ease;
+  -webkit-transition: box-shadow 150ms ease;
+}
+
 .deck-card-title {
   color: #4A4A4A;
   display: block;
