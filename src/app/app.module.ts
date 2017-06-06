@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
+import { BoardModule } from './board/board.module';
+
 import { AppComponent } from './app.component';
 import { LaunchComponent } from './launch.component';
 import { AuthComponent } from './auth.component';
@@ -21,14 +23,14 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LaunchComponent,
-    AuthComponent,
-    BoardComponent
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    BoardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
