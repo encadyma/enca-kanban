@@ -2,6 +2,7 @@
 <div class="board-decks-container">
   <deck
     [deck]="deck"
+    [(selectedCard)]="selectedCard"
     *ngFor="let deck of test_board.decks"></deck>
   <!-- sample deck -->
   <div class="deck">

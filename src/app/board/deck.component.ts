@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class DeckComponent {
   @Input() deck;
+  @Input() selectedCard;
+  onSelect(card): void {
+    console.log(card);
+    this.selectedCard = card;
+  }
 }

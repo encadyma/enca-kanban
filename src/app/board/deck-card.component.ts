@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'deck-card',
   template: `
-  <div class="deck-card">
+  <div class="deck-card" [class.active]="card === selectedCard">
     <ul class="deck-card-labels">
       <li class="deck-card-label red"></li>
       <li class="deck-card-label orange"></li>
@@ -16,4 +16,5 @@ import { Component, Input } from '@angular/core';
 })
 export class DeckCardComponent {
   @Input() card;
+  @Input() selectedCard;
 }
