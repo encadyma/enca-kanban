@@ -3,7 +3,9 @@
 
 .board-toolbar {
   padding-top: 30px;
-  padding-right: 90px;
+  position: fixed;
+  width: 100%;
+  background-color: #FFFFFF;
 }
 
 /* Menu Button */
@@ -66,13 +68,18 @@
   font-style: italic;
   color: #9B9B9B;
   margin-top: 15px;
+  margin-right: 90px;
 }
 
 /* Deck Styling */
 .board-decks-container {
-  margin-top: 35px;
-  margin-left: 96px;
+  padding-top: 120px;
+  margin: 0 96px;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
 }
+
 .deck {
   max-width: 300px;
   display: inline-block;
