@@ -46,6 +46,12 @@ button.turq {
   color: #15AB89;
 }
 
+button.red {
+  border-color: #F5515F;
+  background-color: #FFFFFF;
+  color: #F5515F;
+}
+
 /* Angular Component Styling */
 #app-loading {
   color: #A0A0A0;

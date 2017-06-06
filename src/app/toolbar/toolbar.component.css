@@ -8,7 +8,7 @@
 }
 
 /* Menu Button */
-.fa-bars {
+.fa-bars, .fa-chevron-left {
   font-size: 1.6em;
   color: #15AB89;
   padding: 20px 32px;
@@ -18,7 +18,7 @@
   opacity: 0.4;
 }
 
-.fa-bars:hover {
+.fa-bars:hover, .fa-chevron-left:hover {
   opacity: 1;
   border-left-color: #15AB89;
   transition: all ease 150ms;

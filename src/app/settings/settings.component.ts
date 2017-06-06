@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./settings.component.css']
 })
 export class SettingsComponent {
+  goToView = "/board";
   test_board = {
     id: 1,
     title: "Personal Roadmap",

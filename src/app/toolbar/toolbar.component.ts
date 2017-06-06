@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class ToolbarComponent {
   // title = 'app works!';
   @Input() board;
+  @Input() goToView;
 }

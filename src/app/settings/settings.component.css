@@ -1,0 +1,223 @@
+/* Board Toolbar */
+
+.board-toolbar {
+  padding-top: 30px;
+  position: fixed;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+/* Menu Button */
+.fa-bars {
+  font-size: 1.6em;
+  color: #15AB89;
+  padding: 20px 32px;
+  border-left: 6px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all ease 150ms;
+  opacity: 0.4;
+}
+
+.fa-bars:hover {
+  opacity: 1;
+  border-left-color: #15AB89;
+  transition: all ease 150ms;
+}
+
+.board-title {
+  display: inline-block;
+  cursor: default;
+}
+.board-title-workspace {
+  font-size: 2em;
+  font-weight: 700;
+  color: #DF41FF;
+}
+.board-title-board {
+  font-size: 2em;
+  font-weight: 500;
+  color: #A919C7;
+}
+
+.board-title-dropdown {
+  font-size: 1em;
+  color: #A919C7;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0);
+  vertical-align: top;
+  margin-top: 4px;
+}
+
+.board-title-dropdown:hover {
+  background-color: #F0F0F0;
+}
+
+.board-search {
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  background-color: #F0F0F0;
+  font-size: 1em;
+  font-family: 'Alegreya Sans', sans-serif;
+  outline: none;
+  -webkit-outline: none;
+  border: 0;
+  float: right;
+  font-style: italic;
+  color: #9B9B9B;
+  margin-top: 15px;
+  margin-right: 90px;
+}
+
+
+/* Settings Styling */
+.settings-container {
+  padding-top: 120px;
+  margin-left: 96px;
+  overflow-y: hidden;
+}
+
+/* Titles Reset */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.settings-left {
+  max-width: 400px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Settings Selector */
+
+.settings-left > b {
+  margin-left: 15px;
+}
+
+.settings-selector {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.settings-selector li {
+  padding: 8px 10px;
+  margin: 5px;
+  font-weight: 500;
+  color: #4A4A4A;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.settings-selector li:hover, .settings-selector li.hovered {
+  background-color: rgba(155, 155, 155, 0.4);
+}
+
+.settings-selector li.red:hover, .settings-selector li.red.hovered, .settings-selector li.red.active {
+  background-color: #E41D1D;
+  color: #FFFFFF;
+}
+
+.settings-selector li.active {
+  background-color: #15AB89;
+  color: #FFFFFF;
+}
+
+.settings-selector.darked li.active {
+  background-color: #A919C7;
+  color: #FFFFFF;
+}
+
+.settings-user {
+  background-color: #4A4A4A;
+  border-radius: 8px;
+  width: 210px;
+  margin: 20px 0;
+  color: #FAFAFA;
+  padding: 10px 0;
+}
+
+.settings-user-profile {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.user-profile-picture {
+  border-radius: 64px;
+  border: 4px solid #04EAD0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 50);
+}
+
+.settings-user li {
+  color: #D8D8D8;
+}
+
+/* Settings Form Option */
+
+.settings-right {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+}
+
+.settings-right h1 {
+  font-size: 2em;
+}
+
+.setting-section {
+  margin-bottom: 20px;
+}
+
+.setting-headline {
+  display: inline-block;
+  max-width: 200px;
+  vertical-align: top;
+}
+
+.setting-headline b {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.setting-headline p {
+  color: #4A4A4A;
+}
+
+.setting-form {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: top;
+}
+
+.setting-form p {
+  max-width: 500px;
+}
+
+.setting-form button {
+  margin-bottom: 20px;
+}
+
+.setting-form-option {
+  padding: 1.2em 2em;
+  margin-bottom: 10px;
+  max-width: 500px;
+  background-color: #FAFAFA;
+  color: #1C1C1C;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.setting-form-option:hover, .setting-form-option.hovered {
+  background-color: #EDEDED;
+}
+
+.setting-form-option.active {
+  background-color: #BD0FE1;
+  color: #FAFAFA;
+}
