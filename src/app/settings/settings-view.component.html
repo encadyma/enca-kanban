@@ -6,21 +6,7 @@
       <b>{{form.title}}</b>
       <p>{{form.short_desc}}</p>
     </div>
-    <div class="setting-form">
-      <p *ngIf="form.description">{{form.description}}</p>
-      <br *ngIf="form.description">
-      <div *ngFor="let opt of form.options">
-        <button>{{opt.title}}</button>
-        <p *ngIf="opt.description">{{opt.description}}</p>
-        <br *ngIf="opt.description">
-      </div>
-      <div *ngFor="let opt of form.options">
-        <div class="setting-form-option">
-          <h3>{{opt.title}}</h3>
-          <p>{{opt.description}}</p>
-        </div>
-      </div>
-    </div>
+    <setting-form [form]="form"></setting-form>
   </div>
   <div class="setting-section">
     <div class="setting-headline">

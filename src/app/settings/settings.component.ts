@@ -192,7 +192,7 @@ export class SettingsComponent {
         break;
       }
     }
-    console.log(this.selectedSetting);
+    // console.log(this.selectedSetting);
     return this.selectedSetting;
   }
 

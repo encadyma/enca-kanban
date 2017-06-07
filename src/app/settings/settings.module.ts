@@ -8,7 +8,8 @@ import { SettingsComponent } from './settings.component';
 import { SettingsBarComponent } from './settings-bar.component';
 import { SettingsViewComponent } from './settings-view.component';
 import { SettingFormComponent } from './setting-form.component';
-
+import { SettingOptionPickerComponent } from './setting-option-picker.component';
+import { SettingOptionButtonComponent } from './setting-option-button.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,9 @@ import { SettingFormComponent } from './setting-form.component';
     SettingsComponent,
     SettingsBarComponent,
     SettingsViewComponent,
-    SettingFormComponent
+    SettingFormComponent,
+    SettingOptionPickerComponent,
+    SettingOptionButtonComponent
   ]
 })
 export class SettingsModule {}

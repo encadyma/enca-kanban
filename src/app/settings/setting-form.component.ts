@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'settings-setting-form',
-  template: ``,
+  selector: 'setting-form',
+  templateUrl: 'setting-form.component.html',
   styleUrls: ['./settings.component.css']
 })
 export class SettingFormComponent {
-
+  @Input() form;
 }
