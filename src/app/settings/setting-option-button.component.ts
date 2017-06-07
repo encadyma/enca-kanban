@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
   selector: 'setting-option-button',
   template: `
   <div *ngFor="let opt of options">
-    <button style="margin-bottom: 20px;">{{opt.title}}</button>
+    <button style="margin-bottom: 20px;" [(ngClass)]="opt.options.cssClasses">{{opt.title}}</button>
     <p *ngIf="opt.description" style="max-width: 500px;">{{opt.description}}</p>
     <br *ngIf="opt.description">
   </div>`,
