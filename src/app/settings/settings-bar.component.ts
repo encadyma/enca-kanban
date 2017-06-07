@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'settings-bar',
@@ -31,6 +32,8 @@ export class SettingsBarComponent {
     }
   };
 
+  constructor (private router: Router) {}
+
   getOptionClasses(option): string[] {
     var returnArray = [];
     if (option.hovered) {
@@ -40,5 +43,9 @@ export class SettingsBarComponent {
       returnArray.push('active');
     }
     return returnArray;
+  }
+
+  logout(): void {
+    this.router.navigate(['/launch']);
   }
 }
