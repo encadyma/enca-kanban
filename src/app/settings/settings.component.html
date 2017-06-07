@@ -1,31 +1,6 @@
 <board-toolbar [board]="test_board" class="board-toolbar" [goToView]="goToView"></board-toolbar>
 <div class="settings-container">
-  <div class="settings-left">
-    <b>WORKSPACE SETTINGS</b>
-    <ul class="settings-selector">
-      <li>General</li>
-      <li>Lorem Ipsum</li>
-      <li>Collaboration</li>
-      <li>Not Very Serious</li>
-      <li>Worded Astronomy</li>
-      <li class="hovered">Hovered Setting</li>
-      <li>Optionism</li>
-      <li class="active">Selected Setting</li>
-    </ul>
-    <div class="settings-user">
-      <div class="settings-user-profile">
-        <img class="user-profile-picture" src="/assets/LaunchImage.png" width="64" height="64"><br>
-        <b class="user-profile-name">Timothy Braines</b><br>
-        <small class="user-profile-handle">@TBraines</small>
-      </div>
-      <ul class="settings-selector darked">
-        <li class="hovered">General</li>
-        <li>Password</li>
-        <li class="active">Privacy and Security</li>
-        <li class="red" style="margin-top: 10px;" (click)="logout()">Log Out</li>
-      </ul>
-    </div>
-  </div>
+  <settings-bar></settings-bar>
   <section class="settings-right">
     <h1>Privacy and Security</h1>
     <br>
