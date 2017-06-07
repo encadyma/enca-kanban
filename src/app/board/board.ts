@@ -1,7 +1,7 @@
 
 // Card Class
 export class Card {
-  //id: number;
+  id: number;
   title: string;
   labels: string[];     // TODO: update this to be able to use custom colored labels
 }
@@ -11,7 +11,7 @@ export class Deck {
   id: number;
   title: string;
   subtitle?: string;
-  cards: Card[];
+  cards: number[];      // array of card ids
 }
 
 // Board Class
@@ -20,4 +20,5 @@ export class Board {
   title: string;
   workspace: string;
   decks: Deck[];
+  cards: Card[];
 }
