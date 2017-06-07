@@ -1,0 +1,71 @@
+/* Board Toolbar */
+
+.board-toolbar {
+  padding-top: 30px;
+  position: fixed;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+/* Menu Button */
+.fa-bars, .fa-chevron-left {
+  font-size: 1.6em;
+  color: #15AB89;
+  padding: 20px 32px;
+  border-left: 6px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all ease 150ms;
+  opacity: 0.4;
+}
+
+.fa-bars:hover, .fa-chevron-left:hover {
+  opacity: 1;
+  border-left-color: #15AB89;
+  transition: all ease 150ms;
+}
+
+.board-title {
+  display: inline-block;
+  cursor: default;
+}
+.board-title-workspace {
+  font-size: 2em;
+  font-weight: 700;
+  color: #DF41FF;
+}
+.board-title-board {
+  font-size: 2em;
+  font-weight: 500;
+  color: #A919C7;
+}
+
+.board-title-dropdown {
+  font-size: 1em;
+  color: #A919C7;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0);
+  vertical-align: top;
+  margin-top: 4px;
+}
+
+.board-title-dropdown:hover {
+  background-color: #F0F0F0;
+}
+
+.board-search {
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  background-color: #F0F0F0;
+  font-size: 1em;
+  font-family: 'Alegreya Sans', sans-serif;
+  outline: none;
+  -webkit-outline: none;
+  border: 0;
+  float: right;
+  font-style: italic;
+  color: #9B9B9B;
+  margin-top: 15px;
+  margin-right: 90px;
+}

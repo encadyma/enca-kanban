@@ -1,0 +1,11 @@
+<section class="settings-right">
+  <h1>{{selectedSetting.title}}</h1>
+  <br>
+  <div class="setting-section" *ngFor="let form of selectedSetting.forms">
+    <div class="setting-headline">
+      <b>{{form.title}}</b>
+      <p>{{form.short_desc}}</p>
+    </div>
+    <setting-form [form]="form"></setting-form>
+  </div>
+</section>

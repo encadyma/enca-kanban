@@ -1,0 +1,17 @@
+<div class="settings-left">
+  <b>WORKSPACE SETTINGS</b>
+  <ul class="settings-selector">
+    <li *ngFor="let option of settings.workspace.options" [ngClass]="getOptionClasses(option)" (click)="setSelectedSetting(option.id)">{{option.title}}</li>
+  </ul>
+  <div class="settings-user">
+    <div class="settings-user-profile">
+      <img class="user-profile-picture" src="/assets/LaunchImage.png" width="64" height="64"><br>
+      <b class="user-profile-name">Timothy Braines</b><br>
+      <small class="user-profile-handle">@TBraines</small>
+    </div>
+    <ul class="settings-selector darked">
+      <li *ngFor="let option of settings.user.options" [ngClass]="getOptionClasses(option)" (click)="setSelectedSetting(option.id)">{{option.title}}</li>
+      <li class="red" style="margin-top: 10px;" (click)="logout()" *ngIf="settings.user.includeLogoutOption">Log Out</li>
+    </ul>
+  </div>
+</div>

@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class BoardComponent {
   // Sample board, based on early mockups.
   selectedCard = null;
+  goToView = "/settings";
   test_board = {
     id: 1,
     title: "Personal Roadmap",

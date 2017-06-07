@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
     <i class="fa fa-caret-down board-title-dropdown"></i>
   </div>
   `,
-  styleUrls: ['board.component.css']
+  styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarTitleComponent {
   @Input() board;
