@@ -47,7 +47,7 @@ export const MOCK_BOARD: Board = {
     { id: 11, title: "1-hour dubstep mix for College Festa", labels: ['red', 'orange', 'yellow', 'turq'] },
     { id: 12, title: "50 page paper on AI (due by finals)", labels: ['red', 'orange', 'yellow', 'turq'] },
     { id: 13, title: "Card Test #1", labels: ['orange', 'turq'] },
-    { id: 14, title: "Card w/ no labels!", labels: [] },
+    { id: 14, title: "Card w/ no labels!", labels: null },
     { id: 15, title: "Now a card with all default labels! (special, isn't it?)", labels: ['red', 'orange', 'yellow', 'green', 'turq', 'blue', 'purple', 'black'] }
   ]
 }
