@@ -11,6 +11,7 @@ export class DeckComponent implements OnInit {
   @Input() board;
   @Input() deck;
   @Input() selectedCard;
+  @Input() selectedDeck;
   cards = [];
 
   constructor (private boardService: BoardService) {}
@@ -20,7 +21,7 @@ export class DeckComponent implements OnInit {
   }
 
   onSelect(card): void {
-    this.selectedCard = card;
+    this.selectedCard = card.id;
   }
 
   getCards() {

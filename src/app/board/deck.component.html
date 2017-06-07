@@ -5,7 +5,8 @@
       [card]="card"
       *ngFor="let card of cards"
       (click)="onSelect(card)"
-      [(selectedCard)]="selectedCard"></deck-card>
+      [(selectedCard)]="selectedCard"
+      [isSelected]="(selectedDeck === deck.id)"></deck-card>
   </div>
   <div class="deck-action-add-card">+ ADD CARD</div>
 </div>
