@@ -1,0 +1,43 @@
+<section class="settings-right">
+  <h1>{{selectedSetting.title}}</h1>
+  <br>
+  <div class="setting-section">
+    <div class="setting-headline">
+      <b>DIAGNOSTICS</b>
+      <p>Choose how you want Kanban to collect information.</p>
+    </div>
+    <div class="setting-form">
+      <div class="setting-form-options">
+        <div class="setting-form-option">
+          <h3>Option #1</h3>
+          <p>Paragraph options are nice. However, if you choose this option, you can choose something bigger, maybe.</p>
+        </div>
+        <div class="setting-form-option active">
+          <h3>Option #2</h3>
+          <p>Paragraph options are nice. However, if you choose this option, you can choose something bigger, maybe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="setting-section">
+    <div class="setting-headline">
+      <b>CONNECTED SERVICES</b>
+      <p>Modify how services can interact with your account.</p>
+    </div>
+    <div class="setting-form">
+      <button>VIEW CONNECTED SERVICES</button>
+      <p>Paragraph options are nice. However, if you choose this option, you can choose something bigger, maybe.</p>
+    </div>
+  </div>
+  <div class="setting-section">
+    <div class="setting-headline">
+      <b>DELETE ACCOUNT</b>
+      <p>Erase all of your data from Project Kanban, forever.</p>
+    </div>
+    <div class="setting-form">
+      <p>This is probably the worst place to put an account deletion setting, but we'll do it because this is not really a working mockup. Just click on that big red button that says “Delete Account” to permanently delete your account from Project Kanban.</p>
+      <br>
+      <button class="red" (click)="logout()">DELETE YOUR ACCOUNT</button>
+    </div>
+  </div>
+</section>

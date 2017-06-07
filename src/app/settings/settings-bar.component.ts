@@ -7,30 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./settings.component.css']
 })
 export class SettingsBarComponent {
-  settings = {      // TODO: add proper routing vars
-    workspace: {
-      title: "WORKSPACE SETTINGS",
-      options: [
-        {title: 'General'},
-        {title: 'Lorem Ipsum'},
-        {title: 'Collaboration'},
-        {title: 'Not Very Serious'},
-        {title: 'Worded Astronomy'},
-        {title: 'Hovered Setting', hovered: true},
-        {title: 'Optionism'},
-        {title: 'Selected Setting', default: true}
-      ]
-    },
-    user: {
-      title: "USER SETTINGS",
-      options: [
-        {title: 'General', hovered: true},
-        {title: 'Password'},
-        {title: 'Privacy and Security', default: true}
-      ],
-      includeLogoutOption: true
-    }
-  };
+  @Input() settings;
+  @Input() selectedSetting;
 
   constructor (private router: Router) {}
 
@@ -39,10 +17,27 @@ export class SettingsBarComponent {
     if (option.hovered) {
       returnArray.push('hovered');
     }
-    if (option.default) {
+    if (option.selected) {
       returnArray.push('active');
     }
     return returnArray;
+  }
+
+  setSelectedSetting(id): void {
+    for (var setting of this.settings.workspace.options) {
+      if (setting.id == id) {
+        setting.selected = true;
+      } else {
+        setting.selected = false;
+      }
+    }
+    for (var setting of this.settings.user.options) {
+      if (setting.id == id) {
+        setting.selected = true;
+      } else {
+        setting.selected = false;
+      }
+    }
   }
 
   logout(): void {

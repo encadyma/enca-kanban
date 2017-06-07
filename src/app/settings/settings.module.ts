@@ -6,6 +6,9 @@ import { ToolbarModule }    from '../toolbar/toolbar.module';
 
 import { SettingsComponent } from './settings.component';
 import { SettingsBarComponent } from './settings-bar.component';
+import { SettingsViewComponent } from './settings-view.component';
+import { SettingFormComponent } from './setting-form.component';
+
 
 @NgModule({
   imports: [
@@ -15,7 +18,9 @@ import { SettingsBarComponent } from './settings-bar.component';
   ],
   declarations: [
     SettingsComponent,
-    SettingsBarComponent
+    SettingsBarComponent,
+    SettingsViewComponent,
+    SettingFormComponent
   ]
 })
 export class SettingsModule {}

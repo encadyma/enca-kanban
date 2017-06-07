@@ -1,7 +1,7 @@
 <div class="settings-left">
   <b>WORKSPACE SETTINGS</b>
   <ul class="settings-selector">
-    <li *ngFor="let option of settings.workspace.options" [ngClass]="getOptionClasses(option)">{{option.title}}</li>
+    <li *ngFor="let option of settings.workspace.options" [ngClass]="getOptionClasses(option)" (click)="setSelectedSetting(option.id)">{{option.title}}</li>
   </ul>
   <div class="settings-user">
     <div class="settings-user-profile">
@@ -10,7 +10,7 @@
       <small class="user-profile-handle">@TBraines</small>
     </div>
     <ul class="settings-selector darked">
-      <li *ngFor="let option of settings.user.options" [ngClass]="getOptionClasses(option)">{{option.title}}</li>
+      <li *ngFor="let option of settings.user.options" [ngClass]="getOptionClasses(option)" (click)="setSelectedSetting(option.id)">{{option.title}}</li>
       <li class="red" style="margin-top: 10px;" (click)="logout()" *ngIf="settings.user.includeLogoutOption">Log Out</li>
     </ul>
   </div>
