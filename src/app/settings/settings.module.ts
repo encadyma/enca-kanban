@@ -5,6 +5,7 @@ import { FormsModule }    from '@angular/forms';
 import { ToolbarModule }    from '../toolbar/toolbar.module';
 
 import { SettingsComponent } from './settings.component';
+import { SettingsBarComponent } from './settings-bar.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { SettingsComponent } from './settings.component';
     ToolbarModule
   ],
   declarations: [
-    SettingsComponent
+    SettingsComponent,
+    SettingsBarComponent
   ]
 })
 export class SettingsModule {}

@@ -10,10 +10,9 @@ export class ToolbarViewChangerComponent {
   @Input() board;
   @Input() goToView;
 
-  constructor(private router: Router) {}
+  constructor (private router: Router) {}
 
   onClick(): void {
-    console.log(this.goToView);
     this.router.navigate([this.goToView]);
   }
 

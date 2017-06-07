@@ -22,7 +22,7 @@
         <li class="hovered">General</li>
         <li>Password</li>
         <li class="active">Privacy and Security</li>
-        <li class="red" style="margin-top: 10px;">Log Out</li>
+        <li class="red" style="margin-top: 10px;" (click)="logout()">Log Out</li>
       </ul>
     </div>
   </div>
@@ -65,7 +65,7 @@
       <div class="setting-form">
         <p>This is probably the worst place to put an account deletion setting, but we'll do it because this is not really a working mockup. Just click on that big red button that says “Delete Account” to permanently delete your account from Project Kanban.</p>
         <br>
-        <button class="red">DELETE YOUR ACCOUNT</button>
+        <button class="red" (click)="logout()">DELETE YOUR ACCOUNT</button>
       </div>
     </div>
   </section>
