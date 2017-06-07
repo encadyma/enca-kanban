@@ -1,7 +1,8 @@
-<board-toolbar [board]="test_board" class="board-toolbar" [goToView]="goToView"></board-toolbar>
+<board-toolbar [board]="current_board" class="board-toolbar" [goToView]="goToView"></board-toolbar>
 <div class="board-decks-container">
   <deck
-    [deck]="deck"
+    [deck]="deck" 
+    [board]="current_board"
     [(selectedCard)]="selectedCard"
-    *ngFor="let deck of test_board.decks"></deck>
+    *ngFor="let deck of current_board.decks"></deck>
 </div>

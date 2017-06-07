@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { BoardService } from './board.service'
 
@@ -7,11 +7,16 @@ import { BoardService } from './board.service'
   templateUrl: './board.component.html',
   styleUrls: ['./board.component.css']
 })
-export class BoardComponent {
+export class BoardComponent implements OnInit {
   // Sample board, based on early mockups.
   selectedCard = null;
   goToView = "/settings";
-  test_board = {
+
+  constructor (private boardService: BoardService) {}
+
+  current_board = {}
+
+  /*test_board = {
     id: 1,
     title: "Personal Roadmap",
     workspace: "Project Revive",
@@ -59,5 +64,16 @@ export class BoardComponent {
         ]
       }
     ]
-  };
+  };*/
+
+  ngOnInit(): void {
+    this.getBoard();
+  }
+
+  getBoard(): void {
+    this.boardService.getBoard().then(board => {
+      this.current_board = board;
+      console.log(this.current_board);
+    });
+  }
 }

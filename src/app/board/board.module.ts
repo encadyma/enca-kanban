@@ -9,6 +9,8 @@ import { DeckComponent } from './deck.component';
 import { DeckHeaderComponent } from './deck-header.component';
 import { DeckCardComponent } from './deck-card.component';
 
+import { BoardService } from './board.service';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -20,6 +22,7 @@ import { DeckCardComponent } from './deck-card.component';
     DeckComponent,
     DeckHeaderComponent,
     DeckCardComponent
-  ]
+  ],
+  providers: [ BoardService ]
 })
 export class BoardModule {}

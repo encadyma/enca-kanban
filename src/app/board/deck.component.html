@@ -3,7 +3,7 @@
   <div class="deck-cards">
     <deck-card
       [card]="card"
-      *ngFor="let card of deck.cards"
+      *ngFor="let card of cards"
       (click)="onSelect(card)"
       [(selectedCard)]="selectedCard"></deck-card>
   </div>
