@@ -26,7 +26,7 @@ export class SettingsComponent {
             type: "Button",
             description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
             options: [
-              {id: 1, title: "DULL BUTTON", description: ""},
+              {id: 1, title: "DULL BUTTON", description: "", options: {}},
             ]
           }
         ]},
@@ -37,7 +37,7 @@ export class SettingsComponent {
             type: "Button",
             description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
             options: [
-              {id: 1, title: "DULL BUTTON", description: ""},
+              {id: 1, title: "DULL BUTTON", description: "", options: {}},
             ]
           }
         ]},
@@ -48,7 +48,7 @@ export class SettingsComponent {
             type: "Button",
             description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
             options: [
-              {id: 1, title: "DULL BUTTON", description: ""},
+              {id: 1, title: "DULL BUTTON", description: "", options: {}},
             ]
           }
         ]},
@@ -59,7 +59,7 @@ export class SettingsComponent {
             type: "Button",
             description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
             options: [
-              {id: 1, title: "DULL BUTTON", description: ""},
+              {id: 1, title: "DULL BUTTON", description: "", options: {}},
             ]
           }
         ]},
@@ -70,7 +70,7 @@ export class SettingsComponent {
             type: "Button",
             description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
             options: [
-              {id: 1, title: "DULL BUTTON", description: ""},
+              {id: 1, title: "DULL BUTTON", description: "", options: {}},
             ]
           }
         ]},
@@ -81,7 +81,7 @@ export class SettingsComponent {
             type: "Button",
             description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
             options: [
-              {id: 1, title: "DULL BUTTON", description: ""},
+              {id: 1, title: "DULL BUTTON", description: "", options: {}},
             ]
           }
         ]},
@@ -92,7 +92,7 @@ export class SettingsComponent {
             type: "Button",
             description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
             options: [
-              {id: 1, title: "DULL BUTTON", description: ""},
+              {id: 1, title: "DULL BUTTON", description: "", options: {}},
             ]
           }
         ]},
@@ -103,7 +103,7 @@ export class SettingsComponent {
             type: "Button",
             description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
             options: [
-              {id: 1, title: "DULL BUTTON", description: ""},
+              {id: 1, title: "DULL BUTTON", description: "", options: {}},
             ]
           }
         ]}
@@ -119,7 +119,7 @@ export class SettingsComponent {
             type: "Button",
             description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
             options: [
-              {id: 1, title: "DULL BUTTON", description: ""},
+              {id: 1, title: "DULL BUTTON", description: "", options: {}},
             ]
           }
         ]},
@@ -134,7 +134,7 @@ export class SettingsComponent {
               type: "Button",
               description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
               options: [
-                {id: 1, title: "DULL BUTTON", description: ""},
+                {id: 1, title: "DULL BUTTON", description: "", options: {}},
               ]
             }
           ]
@@ -150,8 +150,8 @@ export class SettingsComponent {
               type: "Picker",
               description: "",
               options: [
-                {id: 1, title: "Option #1", description: "Paragraph options are nice. However, if you choose this option, you can choose something bigger, maybe."},
-                {id: 2, title: "Option #2", description: "Paragraph options are nice. However, if you choose this option, you can choose something bigger, maybe."}
+                {id: 1, title: "Option #1", description: "Paragraph options are nice. However, if you choose this option, you can choose something bigger, maybe.", options: {}},
+                {id: 2, title: "Option #2", description: "Paragraph options are nice. However, if you choose this option, you can choose something bigger, maybe.", options: {}}
               ]
             },
             {
@@ -160,16 +160,16 @@ export class SettingsComponent {
               type: "Button",
               description: "",
               options: [
-                {id: 1, title: "VIEW CONNECTED SERVICES", description: "Paragraph options are nice. However, if you choose this option, you can choose something bigger, maybe."}
+                {id: 1, title: "VIEW CONNECTED SERVICES", description: "Paragraph options are nice. However, if you choose this option, you can choose something bigger, maybe.", options: {}}
               ]
             },
             {
-              title: "CONNECTED SERVICES",
-              short_desc: "Modify how services can interact with your account.",
+              title: "DELETE ACCOUNT",
+              short_desc: "Erase all of your data from Project Kanban, forever.",
               type: "Button",
               description: "This is probably the worst place to put an account deletion setting, but we'll do it because this is not really a working mockup. Just click on that big red button that says “Delete Account” to permanently delete your account from Project Kanban.",
               options: [
-                {id: 1, title: "DELETE YOUR ACCOUNT", description: ""/*, routeTo: ["/launch"]*/}
+                {id: 1, title: "DELETE YOUR ACCOUNT", description: "", options: {} /*{routeTo: ["/launch"], classes: ["red"]}*/}
               ]
             }
           ]
