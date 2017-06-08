@@ -8,88 +8,72 @@ export const MOCK_SETTINGS: SettingsArray = {      // TODO: add proper routing v
         {
           title: "NOTICE",
           short_desc: "There's not really any information here yet.",
-          type: SettingFormType.BUTTON,
+          type: SettingFormType.DESCRIPTION,
           description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
-          options: [
-            {id: 1, title: "DULL BUTTON", description: "", options: { cssClasses: [''] }},
-          ]
+          options: []
         }
       ]},
       {id: 2, title: 'Boards', selected: false, forms: [
         {
           title: "NOTICE",
           short_desc: "There's not really any information here yet.",
-          type: SettingFormType.BUTTON,
+          type: SettingFormType.DESCRIPTION,
           description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
-          options: [
-            {id: 1, title: "DULL BUTTON", description: "", options: { cssClasses: [''] }},
-          ]
+          options: []
         }
       ]},
       {id: 3, title: 'Appearance', selected: false, forms: [
         {
           title: "NOTICE",
           short_desc: "There's not really any information here yet.",
-          type: SettingFormType.BUTTON,
+          type: SettingFormType.DESCRIPTION,
           description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
-          options: [
-            {id: 1, title: "DULL BUTTON", description: "", options: { cssClasses: [''] }},
-          ]
+          options: []
         }
       ]},
       {id: 4, title: 'Sharing', selected: false, forms: [
         {
           title: "NOTICE",
           short_desc: "There's not really any information here yet.",
-          type: SettingFormType.BUTTON,
+          type: SettingFormType.DESCRIPTION,
           description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
-          options: [
-            {id: 1, title: "DULL BUTTON", description: "", options: { cssClasses: [''] }},
-          ]
+          options: []
         }
       ]},
       {id: 5, title: 'Notifications', selected: false, forms: [
         {
           title: "NOTICE",
           short_desc: "There's not really any information here yet.",
-          type: SettingFormType.BUTTON,
+          type: SettingFormType.DESCRIPTION,
           description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
-          options: [
-            {id: 1, title: "DULL BUTTON", description: "", options: { cssClasses: [''] }},
-          ]
+          options: []
         }
       ]},
       {id: 6, title: 'Integrations', selected: false, forms: [
         {
           title: "NOTICE",
           short_desc: "There's not really any information here yet.",
-          type: SettingFormType.BUTTON,
+          type: SettingFormType.DESCRIPTION,
           description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
-          options: [
-            {id: 1, title: "DULL BUTTON", description: "", options: { cssClasses: [''] }},
-          ]
+          options: []
         }
       ]},
       {id: 7, title: 'Activity Log', selected: false, forms: [
         {
           title: "NOTICE",
           short_desc: "There's not really any information here yet.",
-          type: SettingFormType.BUTTON,
+          type: SettingFormType.DESCRIPTION,
           description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
-          options: [
-            {id: 1, title: "DULL BUTTON", description: "", options: { cssClasses: [''] }},
-          ]
+          options: []
         }
       ]},
       {id: 8, title: 'Advanced', selected: false, forms: [
         {
           title: "NOTICE",
           short_desc: "There's not really any information here yet.",
-          type: SettingFormType.BUTTON,
+          type: SettingFormType.DESCRIPTION,
           description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
-          options: [
-            {id: 1, title: "DULL BUTTON", description: "", options: { cssClasses: [''] }},
-          ]
+          options: []
         }
       ]}
     ]
@@ -101,10 +85,10 @@ export const MOCK_SETTINGS: SettingsArray = {      // TODO: add proper routing v
         {
           title: "NOTICE",
           short_desc: "There's not really any information here yet.",
-          type: SettingFormType.BUTTON,
+          type: SettingFormType.DESCRIPTION,
           description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
           options: [
-            {id: 1, title: "DULL BUTTON", description: "", options: { cssClasses: [''] }},
+
           ]
         }
       ]},
@@ -116,10 +100,10 @@ export const MOCK_SETTINGS: SettingsArray = {      // TODO: add proper routing v
           {
             title: "NOTICE",
             short_desc: "There's not really any information here yet.",
-            type: SettingFormType.BUTTON,
+            type: SettingFormType.DESCRIPTION,
             description: "This settings page has not been fully implemented yet. Please check back soon to see when you can change your settings.",
             options: [
-              {id: 1, title: "DULL BUTTON", description: "", options: { cssClasses: [''] }},
+
             ]
           }
         ]

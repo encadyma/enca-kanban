@@ -23,11 +23,9 @@ export class SettingsComponent implements OnInit {
     forms: [{
       title: "ERROR",
       short_desc: "Could not retrieve settings",
-      type: SettingFormType.BUTTON,
+      type: SettingFormType.DESCRIPTION,
       description: "We could not retrieve settings at this moment. This may be due to a internet connection error or server maintenance. Please try again in a little while.",
-      options: [
-        {id: 1, title: "NULL BUTTON", description: "", options: { cssClasses: [''] }},
-      ]
+      options: []
     }]
   };
 

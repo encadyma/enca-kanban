@@ -1,6 +1,7 @@
 export enum SettingFormType {
   BUTTON,
-  PICKER
+  PICKER,
+  DESCRIPTION
 }
 
 export class FormOptionProperties {
