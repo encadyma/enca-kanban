@@ -11,6 +11,8 @@ import { SettingFormComponent } from './setting-form.component';
 import { SettingOptionPickerComponent } from './setting-option-picker.component';
 import { SettingOptionButtonComponent } from './setting-option-button.component';
 
+import { SettingsService } from './settings.service';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -24,6 +26,7 @@ import { SettingOptionButtonComponent } from './setting-option-button.component'
     SettingFormComponent,
     SettingOptionPickerComponent,
     SettingOptionButtonComponent
-  ]
+  ],
+  providers: [SettingsService]
 })
 export class SettingsModule {}

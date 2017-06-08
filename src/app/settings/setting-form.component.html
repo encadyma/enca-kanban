@@ -1,6 +1,6 @@
 <div class="setting-form">
   <p *ngIf="form.description">{{form.description}}</p>
   <br *ngIf="form.description">
-  <setting-option-button [options]="form.options" *ngIf="form.type == 'Button'"></setting-option-button>
-  <setting-option-picker [options]="form.options" *ngIf="form.type == 'Picker'"></setting-option-picker>
+  <setting-option-button [options]="form.options" *ngIf="form.type == settingType.BUTTON"></setting-option-button>
+  <setting-option-picker [options]="form.options" *ngIf="form.type == settingType.PICKER"></setting-option-picker>
 </div>

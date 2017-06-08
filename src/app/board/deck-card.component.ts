@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'deck-card',
   template: `
-  <div class="deck-card" [class.active]="card === selectedCard">
+  <div class="deck-card" [class.active]="(card.id === selectedCard) && isSelected">
     <ul class="deck-card-labels" *ngIf="card.labels">
       <li class="deck-card-label" [ngClass]="['deck-card-label', label]" *ngFor="let label of card.labels"></li>
     </ul>
@@ -14,4 +14,5 @@ import { Component, Input } from '@angular/core';
 export class DeckCardComponent {
   @Input() card;
   @Input() selectedCard;
+  @Input() isSelected;
 }

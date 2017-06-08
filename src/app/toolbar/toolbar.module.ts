@@ -7,6 +7,8 @@ import { ToolbarTitleComponent } from './toolbar-title.component';
 import { ToolbarSearchComponent } from './toolbar-search.component';
 import { ToolbarViewChangerComponent } from './toolbar-view-changer.component';
 
+import { BoardService } from '../board/board.service';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -23,6 +25,7 @@ import { ToolbarViewChangerComponent } from './toolbar-view-changer.component';
     ToolbarTitleComponent,
     ToolbarSearchComponent,
     ToolbarViewChangerComponent
-  ]
+  ],
+  providers: [BoardService]
 })
 export class ToolbarModule {}
