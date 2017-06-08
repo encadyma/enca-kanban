@@ -1,10 +1,10 @@
-import { SettingFormType, SettingsArray } from './settings'
+import { SettingFormType, SettingsArray } from './settings';
 
 export const MOCK_SETTINGS: SettingsArray = {      // TODO: add proper routing vars
   workspace: {
     title: "WORKSPACE SETTINGS",
     options: [
-      {id: 1, title: 'General', selected: false, forms: [
+      {id: 1, title: 'General', selected: true, forms: [
         {
           title: "NOTICE",
           short_desc: "There's not really any information here yet.",
@@ -127,7 +127,7 @@ export const MOCK_SETTINGS: SettingsArray = {      // TODO: add proper routing v
       {
         id: 11,
         title: 'Privacy and Security',
-        selected: true,
+        selected: false,
         forms: [
           {
             title: "DIAGNOSTICS",

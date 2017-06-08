@@ -1,11 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { SettingFormType, SettingOption } from './settings';
+import { SettingsService } from './settings.service';
 
 @Component({
   selector: 'app-settings',
   templateUrl: './settings.component.html',
   styleUrls: ['./settings.component.css']
 })
-export class SettingsComponent {
+export class SettingsComponent implements OnInit {
   goToView = "/board";
   test_board = {
     id: 1,
@@ -13,9 +16,22 @@ export class SettingsComponent {
     workspace: "Project Revive"
   };
 
-  selectedSetting = null;
+  selectedSetting: SettingOption = {
+    id: 0,
+    title: "Error",
+    selected: true,
+    forms: [{
+      title: "ERROR",
+      short_desc: "Could not retrieve settings",
+      type: SettingFormType.BUTTON,
+      description: "We could not retrieve settings at this moment. This may be due to a internet connection error or server maintenance. Please try again in a little while.",
+      options: [
+        {id: 1, title: "NULL BUTTON", description: "", options: { cssClasses: [''] }},
+      ]
+    }]
+  };
 
-  settings = {      // TODO: add proper routing vars
+  settings = { workspace: {options: []}, user: {options: []} } /*{      // TODO: add proper routing vars
     workspace: {
       title: "WORKSPACE SETTINGS",
       options: [
@@ -169,7 +185,7 @@ export class SettingsComponent {
               type: "Button",
               description: "This is probably the worst place to put an account deletion setting, but we'll do it because this is not really a working mockup. Just click on that big red button that says “Delete Account” to permanently delete your account from Project Kanban.",
               options: [
-                {id: 1, title: "DELETE YOUR ACCOUNT", description: "", options: { cssClasses: ['red'] } /*{routeTo: ["/launch"], classes: ["red"]}*/}
+                {id: 1, title: "DELETE YOUR ACCOUNT", description: "", options: { cssClasses: ['red'] }}
               ]
             }
           ]
@@ -177,7 +193,13 @@ export class SettingsComponent {
       ],
       includeLogoutOption: true
     }
-  };
+  };*/
+
+  constructor (private settingsService: SettingsService) {}
+
+  getSettings(): void {
+    this.settingsService.getSettings().then(settings => this.settings = settings).then(() => this.getSelectedSetting());
+  }
 
   getSelectedSetting(): Object {
     for (var setting of this.settings.workspace.options) {
@@ -196,7 +218,7 @@ export class SettingsComponent {
     return this.selectedSetting;
   }
 
-  ngOnInit() {
-    this.getSelectedSetting();
+  ngOnInit(): void {
+    this.getSettings();
   }
 }

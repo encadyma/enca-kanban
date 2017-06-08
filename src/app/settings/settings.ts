@@ -1,4 +1,4 @@
-export const enum SettingFormType {
+export enum SettingFormType {
   BUTTON,
   PICKER
 }
