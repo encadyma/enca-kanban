@@ -19,7 +19,7 @@ export class ToolbarComponent implements OnInit {
   constructor (private boardService: BoardService) {}
 
   getBoard(): void {
-    this.boardService.getBoard().then(board => this.board = board);
+    this.boardService.getObservableBoard().subscribe(board => this.board = board);
   }
 
   ngOnInit(): void {

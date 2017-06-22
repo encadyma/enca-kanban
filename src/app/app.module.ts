@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { AppDataService } from './app-data.service'
+
 import { BoardModule } from './board/board.module';
 import { SettingsModule } from './settings/settings.module';
 import { ToolbarModule } from './toolbar/toolbar.module';
@@ -36,7 +39,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     BoardModule,
     SettingsModule,
-    ToolbarModule
+    ToolbarModule,
+    InMemoryWebApiModule.forRoot(AppDataService)
   ],
   providers: [],
   bootstrap: [AppComponent]

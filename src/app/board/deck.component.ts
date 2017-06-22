@@ -29,4 +29,5 @@ export class DeckComponent implements OnInit {
       this.cards = cards;
     });
   }
+
 }

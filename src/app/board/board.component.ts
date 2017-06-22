@@ -22,9 +22,13 @@ export class BoardComponent implements OnInit {
   }
 
   getBoard(): void {
-    this.boardService.getBoard().then(board => {
+    /*this.boardService.getBoard().then(board => {
       this.current_board = board;
-    });
+    });*/
+    this.boardService.getObservableBoard()
+      .subscribe(
+        board => this.current_board = board
+      );
   }
 
   updateSelectedDeck(id: number) {
