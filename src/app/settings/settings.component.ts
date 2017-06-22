@@ -30,11 +30,14 @@ export class SettingsComponent implements OnInit {
   };
 
   settings = { workspace: {options: []}, user: {options: []} }
-  
+
   constructor (private settingsService: SettingsService) {}
 
   getSettings(): void {
-    this.settingsService.getSettings().then(settings => this.settings = settings).then(() => this.getSelectedSetting());
+    this.settingsService.getObservableSettings().subscribe(settings => {
+      this.settings = settings;
+      this.getSelectedSetting();
+    });
   }
 
   getSelectedSetting(): Object {
